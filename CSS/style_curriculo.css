@@ -1,0 +1,112 @@
+/* Variáveis de estilo */
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-quarternaria:#0f0f13;
+    --cor-hover: #272727;
+  
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+  }
+  
+  /* Estilo geral */
+  body {
+    font-family: var(--font-secundaria);
+    line-height: 1.6;
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-primaria);
+  }
+  
+  /* Container principal */
+  #curriculo {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cor-quarternaria);
+    color: var(--cor-secundaria);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cabeçalhos */
+  #curriculo h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--cor-terciaria);
+    font-family: var(--font-primaria);
+  }
+  
+  #curriculo h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+  }
+  
+  #curriculo h3 {
+    border-bottom: 2px solid var(--cor-terciaria);
+    margin-top: 20px;
+    padding-bottom: 5px;
+    color: var(--cor-terciaria);
+    font-size: 1.4em;
+  }
+  
+  /* Links */
+  #curriculo a {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #curriculo a:hover {
+    color: var(--cor-hover);
+  }
+  
+  /* Listas */
+  #curriculo ul {
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  #curriculo ul li {
+    margin-bottom: 10px;
+  }
+  
+  #curriculo ul li strong {
+    color: var(--cor-secundaria);
+  }
+  
+  /* Parágrafos */
+  #curriculo p {
+    margin-bottom: 15px;
+  }
+  
+  /* Destaque */
+  #curriculo em {
+    font-style: italic;
+    color: var(--cor-terciaria);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    #curriculo {
+      padding: 10px;
+    }
+  
+    #curriculo h1 {
+      font-size: 2em;
+    }
+  
+    #curriculo h2 {
+      font-size: 1.5em;
+    }
+  
+    #curriculo h3 {
+      font-size: 1.2em;
+    }
+  }
+  
